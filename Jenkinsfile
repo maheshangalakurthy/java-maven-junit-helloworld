@@ -17,7 +17,7 @@ pipeline{
         stage("Git Checkout"){
             steps{
                 echo "========executing Git Checkout========"
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/maheshangalakurthy/java-maven-junit-helloworld.git'
+                git branch: 'master', credentialsId: 'github', url: 'https://github.com/maheshangalakurthy/java-maven-junit-helloworld.git'
             }
             post{
                 always{
