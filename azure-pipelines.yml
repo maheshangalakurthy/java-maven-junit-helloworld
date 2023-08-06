@@ -29,9 +29,6 @@ steps:
     projectName: 'Agile Project'
     projectKey: 'Agile Project'
 
-- task: SonarCloudAnalyze@1
-  inputs:
-    jdkversion: 'JAVA_HOME_11_X64'
 
 - task: SonarCloudPublish@1
   inputs:
