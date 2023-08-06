@@ -1,5 +1,7 @@
 # A Java/Maven/JUnit HelloWorld example
 
+[![Build Status](https://dev.azure.com/macloudops/AgileProject/_apis/build/status%2Fmaheshangalakurthy.java-maven-junit-helloworld?branchName=master)](https://dev.azure.com/macloudops/AgileProject/_build/latest?definitionId=3&branchName=master)
+
 A „Hello World!” sample written in Java using Maven for the build, that showcases a few very simple tests.
 
 This example demonstrates:
