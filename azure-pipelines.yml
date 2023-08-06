@@ -32,7 +32,7 @@ steps:
   inputs:
     SonarCloud: 'Sonarcloud'
     organization: 'java-organization-mahesh'
-    scannerMode: 'Other'
+    scannerMode: 'CLI'
     projectKey: 'java-organization-mahesh_agile-project'
     projectName: 'Agile Project'
     
