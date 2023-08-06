@@ -35,7 +35,10 @@ steps:
     scannerMode: 'CLI'
     projectKey: 'java-organization-mahesh_agile-project'
     projectName: 'Agile Project'
-    
+
+- task: SonarCloudAnalyze@1
+  inputs:
+    jdkversion: 'JAVA_HOME_11_X64'
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
