@@ -21,15 +21,21 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
+# - task: SonarCloudPrepare@1
+#   inputs:
+#     SonarCloud: 'Sonarcloud'
+#     scannerMode: 'Other'
+#     organization: java-organization-mahesh
+#     projectName: 'Agile Project'
+#     projectKey: 'Agile Project'
 - task: SonarCloudPrepare@1
   inputs:
     SonarCloud: 'Sonarcloud'
+    organization: 'java-organization-mahesh'
     scannerMode: 'Other'
-    organization: java-organization-mahesh
+    projectKey: 'java-organization-mahesh_agile-project'
     projectName: 'Agile Project'
-    projectKey: 'Agile Project'
-
-
+    
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
